@@ -1,0 +1,204 @@
+{
+  "$description": "Tokens del UI Kit · App SIMIT (Figma «SIMIT · Proyecto», página _UI Kit). Cada token se usa en CSS como var(--<grupo>-<nombre>), por ejemplo color.primary → var(--color-primary).",
+  "color": {
+    "primary": {
+      "$type": "color",
+      "$value": "#1F5FA8",
+      "$description": "Acción principal: botón principal, día y horario elegidos."
+    },
+    "primary-hover": {
+      "$type": "color",
+      "$value": "#184C87",
+      "$description": "Hover del botón principal."
+    },
+    "primary-subtle": {
+      "$type": "color",
+      "$value": "#E6EEF8",
+      "$description": "Fondos suaves asociados a la acción principal."
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "#3D4A5C",
+      "$description": "Botón secundario, bordes de chips y horarios, íconos."
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "$description": "Fondo de pantallas y componentes."
+    },
+    "surface-subtle": {
+      "$type": "color",
+      "$value": "#F2F4F7",
+      "$description": "Tarjetas, hover de secundarios, franja Tu cita actual."
+    },
+    "border": {
+      "$type": "color",
+      "$value": "#D0D5DD",
+      "$description": "Bordes de tarjetas, campos y divisores."
+    },
+    "text-primary": {
+      "$type": "color",
+      "$value": "#1A1A1A",
+      "$description": "Texto principal y anillo de foco."
+    },
+    "text-secondary": {
+      "$type": "color",
+      "$value": "#595959",
+      "$description": "Texto de apoyo."
+    },
+    "text-on-primary": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "$description": "Texto sobre color.primary."
+    },
+    "disabled": {
+      "$type": "color",
+      "$value": "#BDBDBD",
+      "$description": "Elementos deshabilitados."
+    },
+    "error": {
+      "$type": "color",
+      "$value": "#B3261E",
+      "$description": "Errores: horario que se llenó, pago fallido."
+    },
+    "error-subtle": {
+      "$type": "color",
+      "$value": "#FDECEA",
+      "$description": "Fondo de avisos de error."
+    },
+    "success": {
+      "$type": "color",
+      "$value": "#1E7D32",
+      "$description": "Éxito: cambio confirmado."
+    },
+    "success-subtle": {
+      "$type": "color",
+      "$value": "#E8F5E9",
+      "$description": "Fondo de avisos de éxito."
+    },
+    "warning": {
+      "$type": "color",
+      "$value": "#B25E00",
+      "$description": "Advertencia: último día para el descuento."
+    },
+    "warning-subtle": {
+      "$type": "color",
+      "$value": "#FFF4E5",
+      "$description": "Fondo de avisos de advertencia."
+    }
+  },
+  "font": {
+    "family": {
+      "sans": {
+        "$type": "fontFamily",
+        "$value": [
+          "Inter",
+          "system-ui",
+          "sans-serif"
+        ]
+      }
+    }
+  },
+  "typography": {
+    "heading": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": 600,
+        "fontSize": "24px",
+        "lineHeight": "32px"
+      },
+      "$description": "Títulos de pantalla."
+    },
+    "body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "24px"
+      },
+      "$description": "Texto de lectura."
+    },
+    "body-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": 600,
+        "fontSize": "16px",
+        "lineHeight": "24px"
+      },
+      "$description": "Etiquetas de botones, valores y datos clave."
+    },
+    "caption": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": 400,
+        "fontSize": "13px",
+        "lineHeight": "18px"
+      },
+      "$description": "Cupos, ayudas de campos, motivos de deshabilitado."
+    }
+  },
+  "spacing": {
+    "4": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "Ícono y texto"
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Título y su texto"
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "Entre botones"
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Márgenes laterales"
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "Entre bloques"
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "Entre secciones"
+    }
+  },
+  "radius": {
+    "sm": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "Etiquetas y sellos"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Botones, chips, campos, horarios y avisos"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Tarjetas y hoja inferior"
+    }
+  },
+  "focus": {
+    "ring": {
+      "$type": "border",
+      "$value": {
+        "color": "{color.text-primary}",
+        "width": "3px",
+        "style": "solid"
+      },
+      "$description": "Anillo de foco con :focus-visible."
+    }
+  }
+}
