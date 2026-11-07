@@ -267,3 +267,31 @@ Respuesta del sistema dentro de la misma pantalla, nunca en una pantalla aparte.
     - `Color/Warning` no se usa como color de texto sobre `Warning-Subtle` (4.3:1). Úsalo solo en el ícono y el borde, y escribe el texto en `Text-Primary` o `Text-Secondary`.
     - No combines pares que no estén en las tablas.
 14. Ningún texto sale de su contenedor con los datos extremos de `guidelines/Stress-test.md`. El texto largo se divide en líneas: nunca se corta con «…» ni se sale de la caja.
+
+
+## theme.json
+
+- `theme.json` (raíz del repositorio) es la fuente de los tokens del UI Kit, en formato Design Tokens (W3C): grupos `color`, `typography`, `spacing`, `radius` y `focus`.
+- Cada token se usa en CSS como variable con el nombre del grupo y del token: `color.primary` → `var(--color-primary)`, `radius.md` → `var(--radius-md)`.
+- Si cambia un token en Figma, se cambia primero en `theme.json` y luego en el bloque `@theme` de `src/index.css`. Los dos deben tener los mismos valores.
+
+## Nombres de los commits
+
+Formato: `tipo(alcance): descripción en presente y en minúscula`.
+
+| Tipo | Cuándo |
+|---|---|
+| `feat` | Pantalla, estado o componente nuevo |
+| `fix` | Corrige un error del flujo o de los datos |
+| `style` | Cambio visual que aplica tokens del UI Kit, sin cambiar comportamiento |
+| `refactor` | Reorganiza código sin cambiar lo que se ve |
+| `docs` | Cambios en AGENTS.md, guidelines o README |
+| `chore` | Dependencias, configuración y deploy |
+
+Alcances: `citas`, `multas`, `pagar`, `mas`, `ayuda`, `ui-kit`, `tokens`, `deploy`.
+
+Ejemplos:
+- `style(ui-kit): aplica Button/Primary y Button/Secondary en Cambiar fecha`
+- `feat(ayuda): agrega preguntas frecuentes e interpretación de códigos`
+- `fix(multas): recalcula el valor con descuento desde el estado compartido`
+- `docs(tokens): agrega theme.json con los tokens del UI Kit`
